@@ -47,7 +47,7 @@ class _SplashPageState extends State<SplashPage> {
             )
             ,const SizedBox(height: 20,),
             const Text(
-              "world's largest private chat App",
+              "Welcome to ichat_app",
               style: TextStyle(color: ColorConstants.themeColor),
             ),
             const SizedBox(height: 20,)
