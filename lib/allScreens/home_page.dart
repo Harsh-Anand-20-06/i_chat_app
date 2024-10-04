@@ -4,11 +4,11 @@ import 'package:ichat_app/allConstants/color_constants.dart';
 import 'package:ichat_app/allModels/popup_choices.dart';
 import 'package:ichat_app/allScreens/login_page.dart';
 import 'package:ichat_app/allScreens/settings_page.dart';
-import 'package:ichat_app/allScreens/chat_screen.dart'; // Import chat screen
+import 'package:ichat_app/allScreens/chat_screen.dart'; 
 import 'package:provider/provider.dart';
 import 'package:ichat_app/allproviders/auth_provider.dart';
 
-import '../main.dart'; // Assuming main.dart initializes the app and provides theme data.
+import '../main.dart'; /
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -109,17 +109,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: isWhite ? Colors.white : Colors.black87, // Background color based on theme
+      backgroundColor: isWhite ? Colors.white : Colors.black87, 
       appBar: AppBar(
-        backgroundColor: isWhite ? Colors.white : Colors.black87, // App bar color based on theme
+        backgroundColor: isWhite ? Colors.white : Colors.black87, 
         leading: IconButton(
           icon: Icon(
-            isWhite ? Icons.brightness_4 : Icons.brightness_7, // Icons for light/dark theme toggle
+            isWhite ? Icons.brightness_4 : Icons.brightness_7, 
             color: isWhite ? Colors.black87 : Colors.white,
           ),
           onPressed: () {
             setState(() {
-              isWhite = !isWhite; // Toggle theme state
+              isWhite = !isWhite; 
             });
           },
         ),
@@ -140,8 +140,8 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text("Open Settings"),
               style: ElevatedButton.styleFrom(
-                backgroundColor: isWhite ? Colors.black87 : Colors.white, // Updated backgroundColor
-                foregroundColor: isWhite ? Colors.white : Colors.black87,   // Updated foregroundColor
+                backgroundColor: isWhite ? Colors.black87 : Colors.white, 
+                foregroundColor: isWhite ? Colors.white : Colors.black87,  
               ),
             ),
             SizedBox(height: 20),
@@ -154,8 +154,8 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text("Open Chatbot"),
               style: ElevatedButton.styleFrom(
-                backgroundColor: isWhite ? Colors.black87 : Colors.white, // Updated backgroundColor
-                foregroundColor: isWhite ? Colors.white : Colors.black87,   // Updated foregroundColor
+                backgroundColor: isWhite ? Colors.black87 : Colors.white, 
+                foregroundColor: isWhite ? Colors.white : Colors.black87,   
               ),
             ),
           ],
